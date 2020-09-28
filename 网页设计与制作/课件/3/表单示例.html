@@ -3,86 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>表单示例</title>
     <style>
-        div {
-            padding: 5px;
+        fieldset {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <form action="">
-        <h1>信息录入</h1>
-        <div>
-            <span>姓名：</span><input type="text" maxlength="5" placeholder="这里输入姓名">
-        </div>
-        <div>
-            <span>姓名：</span><input type="text" size="5">
-        </div>
-        <div>
-            <span>性别：</span>
-            <span>男</span><input type="radio" name="sex">
-            <span>女</span><input type="radio" name="sex">
-        </div>
-        <div>
-            <span>爱好：</span>
-            <span>书法</span><input type="checkbox" name="hobby">
-            <span>绘画</span><input type="checkbox" name="hobby">
-            <span>篮球</span><input type="checkbox" name="hobby">
-            <span>足球</span><input type="checkbox" name="hobby">
-        </div>
-        <div>
-            <span>年龄：</span>
-            <input type="number" max="20" min="10">
-        </div>
-        <div>
-            <span>价格：</span>
-            <input type="range" max="100" min="0" name="price">
-        </div>
-        <div>
-            <span>邮箱：</span>
-            <input type="email" name="email">
-        </div>
-        <div>
-            <span>日期：</span>
-            <input type="date" name="email">
-        </div>
-        <div>
-            <span>时间：</span>
-            <input type="time" name="email">
-        </div>
-        <div>
-            <span>颜色：</span>
-            <input type="color" name="color">
-        </div>
-        <select name="book" size="3">
-            <option value="1">英语书</option>
-            <option value="2">数学书</option>
-            <option value="3">物理书</option>
-            <option value="1">英语书</option>
-            <option value="2">数学书</option>
-            <option value="3">物理书</option>
-        </select>
-        
-        <select>
-            <optgroup label="水果">
-                <option value="1">苹果</option>
-                <option value="2">香蕉</option>
-            </optgroup>
-            <optgroup label="蔬菜">
-                <option value="3">油麦菜</option>
-                <option value="4">藤藤菜</option>
-            </optgroup>
-        
-        </select>
-        
-        <div>
-            <input type="submit" value="提交">
-            <input type="reset" value="重置">
-            <input type="button" value="按钮">
-            <input type="image" src="./timg.jpg" name="submit" width="50px">
-        </div>
-        
+    <form action="" enctype="multipart/form-data">
+        <fieldset>
+            <legend>登陆</legend>
+            <div>
+                <label for="name">账号：<input type="text" id="name" placeholder="这里输入姓名"></label>
+            </div>
+            <div>
+                <label for="pw">密码：<input type="password" id="pw" ></label>
+            </div>
+            <input type="reset" value="重置"><input type="submit" value="提交">
+        </fieldset>
+        <fieldset>
+            <legend>选框</legend>
+            <div>
+                性别：
+                <label for="man">男</label><input type="radio" name="sex" id="man">
+                <label for="man">女</label><input type="radio" name="sex" id="woman">
+            </div>
+            <div>
+                兴趣爱好:
+                <label for="read"><input type="checkbox" name="hobby" id="read">阅读</label>
+                <label for="lq"><input type="checkbox" name="hobby" id="lq">篮球</label>
+                <label for="zq"><input type="checkbox" name="hobby" id="zq">足球</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>数字</legend>
+            <div>
+                <label for="num">年龄：<input type="number" id="num" name="num"></label>
+            </div>
+            <div>
+                <label for="range">范围：<input type="range" id="num" name="range" min="0" max="100"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>日期</legend>
+            <div>
+                <label for="date">日期：<input type="date" id="date" name="date"></label>
+            </div>
+            <div>
+                <label for="time">时间：<input type="time" id="time" name="time"></label>
+            </div>
+            <div>
+                <label for="week">周：<input type="week" id="week" name="week"><label>
+            </div>
+            <div>
+                <label for="mouth">月：<input type="month" id="mouth" name="mouth"><label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>邮箱</legend>
+            <div>
+                <label for="email">邮箱：<input type="email" id="email" name="email"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>颜色</legend>
+            <div>
+                <label for="color">颜色：<input type="color" id="color" name="color"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>图片按钮</legend>
+            <div>
+                <label for="image">图片按钮：<input type="image" id="image" name="image" src="./timg.jpg" width="50px"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>文件上传</legend>
+            <div>
+                <label for="file">文件：<input type="file" id="file" name="file"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>选项列表</legend>
+            <div>
+                <select name="book">
+                    <option value="1">英语书</option>
+                    <option value="2">数学书</option>
+                    <option value="3">物理书</option>
+                    <option value="4">英语书</option>
+                    <option value="5">数学书</option>
+                    <option value="6">物理书</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <optgroup label="水果">
+                        <option value="1">苹果</option>
+                        <option value="2">香蕉</option>
+                    </optgroup>
+                    <optgroup label="蔬菜">
+                        <option value="3">油麦菜</option>
+                        <option value="4">藤藤菜</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>多选框</legend>
+            <textarea name="dh" id="dh" cols="70" rows="10"></textarea>
+        </fieldset>
     </form>
 </body>
 </html>
