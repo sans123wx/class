@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习4-2</title>
+    <style>
+        div.content::after {
+            content: "结尾";
+            color: red;
+        }
+        div.content::before {
+            content: "开始";
+            color: red;
+        }
+        p:nth-child(4) {
+            background-color: blue;
+        }
+        p:nth-child(5) {
+            background-color: grey;
+        }
+        p:nth-child(6) {
+            background-color: green;
+        }
+
+        #title:hover {
+            color: red;
+        }
+        .btn:checked ~ p {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">
+        给野生动物打疫苗，可以预防人类流行病么？
+    </h1>
+    <div class="content">
+        <br>
+        <label for="btn">隐藏</label>
+        <input type="checkbox" class="btn" id="btn">
+        <p class="f">
+            蝙蝠等野生动物会携带传染病，这些传染病可能作为人畜共患疾病（zoonosis）“蔓延”到人类种群中。提前在动物种群中解决这些传染病可能是保护人类最好的办法。
+        </p>
+        <p>
+            科学家们仍在争论 SARS-CoV-2 病毒起源于蝙蝠还是穿山甲。但他们确信，这种冠状病毒只是人畜共患疾病（即从动物传染给人类的疾病）的最新例子。正如流行病学家所说，从艾滋病病毒到后来的埃博拉病毒、尼帕病毒、禽流感，潜伏在野生动物体内的病原体一次次“蔓延”到人类身上。2009 年至 2019 年间，美国国际开发署（U.S.Agency for International Development）的传染病预警系统“预测”（PREDICT），在野生动物身上发现了 1000 多种可能导致人畜共患病的新病毒。COVID-19 不会是最后一个。
+        </p>
+        <p>
+            如果能在野生动物之间通过传播性疫苗（transferable vaccines）阻止病毒的传播，我们能阻止人类传染病大流行吗？一些科学家们认为，答案或许是肯定的。
+        </p>
+        <p>
+            最近，爱达荷大学两位生物学家发表在《自然-生态与演化》（ Nature Ecology & Evolution）杂志上的一项研究为这种方法进行了佐证。“自我传播”疫苗的概念在流行病学界流传了几十年，主要被当成保护野生动物健康的工具。数学生物学家 Scott Nuismer 和演化生物学家 James Bull 用他们建立的模型和其他实验证据推进了这个想法。自我传播的疫苗也可以是一种防止人畜共患病的安全实用的方法。这一想法在付诸实践之前仍存在许多的困难，但研究人员对其潜在效用十分感兴趣。
+        </p>
+    </div>
+</body>
+</html>

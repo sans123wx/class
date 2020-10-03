@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习5</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            width: 90px;
+            padding: 0;
+        }
+        /* 导航 */
+        tr:first-child {
+            background-color: black;
+        }
+        tr:first-child td {
+            color: white;
+            text-align: center;
+        }
+        tr:first-child td:hover {
+            color: red;
+
+        }
+        tr.nav td:last-child , tr.nav td:nth-last-child(2) {
+            width: 130px;
+        }
+        /* 新闻 */
+        tr.lb {
+            border: 1px solid black;
+        }
+        td.ms {
+            background-image: url(./图片/背景1.jpg);
+        }
+        /* 项目 */
+        tr.item {
+            box-shadow: 3px 3px 5px 1px grey;
+        }
+        .item-pc img {
+            border-radius: 10px;
+            width: 100%;
+        }
+        img {
+            display: block;
+        }       
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="nav">
+            <td style="background-color: red;"><img src="./图片/logo.png" alt=""></td>
+            <td>新闻</td>
+            <td>国内</td>
+            <td>国际</td>
+            <td>社会</td>
+            <td>法治</td>
+            <td>图片</td>
+            <td>文娱</td>
+            <td>原创</td>
+            <td>直播</td>
+        </tr>
+        <tr class="lb">
+            <td colspan="8"><img src="./图片/图1.jpg" alt="" width="100%"></td>
+            <td colspan="2" class="ms">
+                <h1>
+                    “云生态·话未来”教育论坛启幕
+                </h1>    
+                <hr>
+                <p>
+                    2020年度央视网教育盛典，聚焦教育，扬善表彰先进典型，把脉教育发展方向。
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="10"><br></td>
+        </tr>
+        <tr class="item">
+            <td colspan="2" class="item-pc" cellpadding="0">
+                <img src="./图片/卡片1.jpg" alt="">
+            </td>
+            <td colspan="8">
+                <h2>刻字、踩踏……假期出游请杜绝这些不文明行为</h2>
+                <p>
+                    适逢中秋国庆“双节”，很多家庭都选择外出旅游，但在游玩过程中，随手刻字、随意踩踏等不文明行为给一些文物和景点造成不可挽回的损失。
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="10"><br></td>
+        </tr>
+        <tr class="item">
+            <td colspan="2" class="item-pc">
+                <img src="./图片/卡片2.jpg" alt="">
+            </td>
+            <td colspan="8">
+                <h2>“小高峰”来临！北京市发提示游客先预约后出游</h2>
+                <p>
+                    记者从慕田峪长城、颐和园、八达岭长城等多家北京旅游景区获悉，3日至5日将迎来客流的小高峰。
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
