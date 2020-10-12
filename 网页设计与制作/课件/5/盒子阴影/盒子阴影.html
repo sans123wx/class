@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子阴影</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        td {
+            padding: 0;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        tr {
+            border-radius: 10px;
+        }
+        tr > td:first-child {
+            width: 240px;
+        }
+        tr > td:last-child {
+            width: 560px;
+        }
+        td img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+        tr.item {
+            background-color: white;
+        }
+        tr.item:hover {
+            box-shadow: 3px 3px 5px 1px grey;
+        }
+        .list {
+            height: 32px;
+            width: 135px;
+            background-color: #bf0816;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 14px;
+            line-height: 32px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+            新闻列表      
+    </div>
+    <table cellspacing="0">
+        <tr class="item">
+            <td>
+                <img src="./卡片1.jpg" alt="">
+            </td>
+            <td>
+                <h2>刻字、踩踏……假期出游请杜绝这些不文明行为</h2>
+                <p>
+                    适逢中秋国庆“双节”，很多家庭都选择外出旅游，但在游玩过程中，随手刻字、随意踩踏等不文明行为给一些文物和景点造成不可挽回的损失。
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><br></td>
+        </tr>
+        <tr class="item">
+            <td>
+                <img src="./卡片2.jpg" alt="">
+            </td>
+            <td>
+                <h2>“小高峰”来临！北京市发提示游客先预约后出游</h2>
+                <p>
+                    记者从慕田峪长城、颐和园、八达岭长城等多家北京旅游景区获悉，3日至5日将迎来客流的小高峰。
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

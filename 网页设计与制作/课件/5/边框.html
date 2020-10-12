@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边框</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        div.config {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+        div.item {
+            width: 220px;
+            height: 220px;
+            border: 1px solid black;
+            margin: 8px 0;
+        }
+        div.item .setting {
+            text-align: center;
+            vertical-align: bottom;
+            border-bottom: 1px solid black;
+            height: 15%;
+            line-height: 27px;
+        }
+        div.item:hover {
+            color: red;
+            border-color: red;
+        }
+        div.item .show {
+            padding: 20px 36.5px 20px 36.5px;
+            height: 85%;
+        }
+        div.item .show div {
+            width: 100%;
+            height: 100%;
+        }
+        div.shape , div.radio {
+            display: none;
+        }
+        #shape:checked + div.shape {
+            display: flex;
+        }
+        #radio:checked + div.radio {
+            display: flex;
+        }
+        .radio .show div {
+            border: 3px solid black;
+        }
+        .title {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="config">
+            <div class="item">
+                <div class="setting">
+                    border: 1px solid black
+                </div>
+                <div class="show">
+                    <div style="border:1px solid black;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border: 10px solid black
+                </div>
+                <div class="show">
+                    <div style="border:10px solid black;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border: 10px double black
+                </div>
+                <div class="show">
+                    <div style="border:10px double black;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border: 10px dashed blue
+                </div>
+                <div class="show">
+                    <div style="border:10px dashed blue;"></div>
+                </div>
+            </div>    
+        </div>
+        <div class="title">
+            <label for="shape">border的线形</label>    
+        </div>
+        <input type="checkbox" hidden id="shape">
+        <div class="config shape">
+            <div class="item">
+                <div class="setting">
+                    形状：solid(单实线)
+                </div>
+                <div class="show">
+                    <div style="border:5px solid black;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    形状：double（双实线）
+                </div>
+                <div class="show">
+                    <div style="border:5px double black;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    形状：dashed（破折现）
+                </div>
+                <div class="show">
+                    <div style="border:5px dashed black;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    形状：dotted（圆点线）
+                </div>
+                <div class="show">
+                    <div style="border:5px dotted black;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    形状：groove（槽线）
+                </div>
+                <div class="show">
+                    <div style="border:15px groove grey;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    形状：inset（内嵌）
+                </div>
+                <div class="show">
+                    <div style="border:15px inset grey;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    形状：outset（外凸）
+                </div>
+                <div class="show">
+                    <div style="border:15px outset grey;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <label for="radio">边框圆角：border-radius</label>    
+        </div>
+        <input type="checkbox" id="radio" hidden>
+        <div class="config radio">
+            <div class="item">
+                <div class="setting">
+                    border-radius:3px
+                </div>
+                <div class="show">
+                    <div style="border-radius: 5px;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border-radius:15px
+                </div>
+                <div class="show">
+                    <div style="border-radius: 15px;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border-radius:25px
+                </div>
+                <div class="show">
+                    <div style="border-radius: 25px;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border-radius:100px
+                </div>
+                <div class="show">
+                    <div style="border-radius: 100px;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border-radius:10%
+                </div>
+                <div class="show">
+                    <div style="border-radius: 10%;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border-radius:30%
+                </div>
+                <div class="show">
+                    <div style="border-radius: 30%;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border-radius:50%
+                </div>
+                <div class="show">
+                    <div style="border-radius: 50%;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting">
+                    border-radius:70%
+                </div>
+                <div class="show">
+                    <div style="border-radius: 70%;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting" style="font-size: 10px;">
+                    border-radius:3px 9px 27px 71px
+                </div>
+                <div class="show">
+                    <div style="border-radius: 3px 9px 27px 71px;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="setting" style="font-size: 10px;">
+                    border-radius:10% 20% 30% 40%
+                </div>
+                <div class="show">
+                    <div style="border-radius: 10% 20% 30% 40%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
