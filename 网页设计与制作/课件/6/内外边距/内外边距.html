@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内外边距</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header h1 {
+            margin-bottom: 25px;
+        }
+        div.info {
+            font-size: 14px;
+            color: #999999;
+            margin-bottom: 30px;
+        }
+        div.info div:first-child {
+            margin-bottom: 10px;
+        }
+        div.main-content div {
+            text-indent: 2em;
+        }
+        div.main-content div {
+            margin-bottom: 18px;
+            line-height: 2em;
+        }
+        div.img {
+            text-align: center;
+        }
+        span.icon {
+            display: inline-block;
+            background-image: url(./bg.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 1em;
+            height: 0.8em
+        }
+        span.img-title {
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>“悟空”巡天，有望揭开暗物质神秘面纱</h1>
+        </div>
+        <div class="info">
+            <div>来源：科技日报 | 2020年10月14日 13:39</div>
+            <div>原标题：“悟空”巡天，有望揭开暗物质神秘面纱</div>
+        </div>
+        <div class="main-content">
+            <div>过去的几天，当全国上下都在庆祝国庆、中秋佳节时，天上那只“猴子”依旧奔跑在太阳同步轨道上，忙忙碌碌。</div>
+            <div>
+                而500公里之下的中国科学院紫金山天文台“悟空”号科研团队，在首席科学家常进院士的带领下也没闲着，正在深入分析宇宙线和伽马射线数据。
+            </div>
+            <div class="img">
+                <img src="./img1.png" alt="">
+                <div>
+                    <span class="icon"></span> <span class="img-title">暗物质粒子探测卫星“悟空”（图源：新华网）</span>
+                </div>
+            </div>
+            <div>
+                从2015年12月20日接收到第一帧数传数据，至2020年9月30日，“悟空”号卫星已在轨飞行1746天，完成了全天区的第9遍扫描，共探测并处理了约86.9亿个高能粒子。
+            </div>
+            <div>
+                “‘悟空’号的设计寿命为3年，目前探测器及卫星平台运行状态良好，已于2019年1月正式进行首次延寿运行，为期2年。基于悟空号目前优异的工作状态，有望于2021年1月再次延寿运行。”团队负责人之一、范一中研究员告诉记者。
+            </div>
+        </div>
+    </div>
+</body>
+</html>
