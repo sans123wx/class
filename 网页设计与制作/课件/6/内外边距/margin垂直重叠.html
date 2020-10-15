@@ -14,10 +14,19 @@
         .level .container {
             display: flex;
         }
+        .vertical {
+            display: none;
+        }
+        .show:checked + div.vertical {
+            display: block;
+        }
         .inset {
-            display: flex;
+            display: none;
             justify-content: space-around;
             align-items: center;
+        }
+        .show:checked + div.inset {
+            display: flex;
         }
         .inset .item:nth-child(4),.inset .item:last-child {
             visibility: hidden;
@@ -38,7 +47,8 @@
             <div class="ex" style="margin-left: 15px"></div>
         </div>
     </div>
-    <h1>垂直方向</h1>
+    <label for="vertical"><h1>垂直方向</h1></label>
+    <input type="checkbox" class="show" hidden id="vertical">
     <div class="vertical">
         
         <div class="container">
@@ -46,7 +56,8 @@
             <div class="ex" style="margin-top: 15px"></div>
         </div>
     </div>
-    <h1>元素内</h1>
+    <label for="inset"><h1>元素内</h1></label>
+    <input type="checkbox" class="show" id="inset" hidden>
     <div class="inset">
         <div class="item">
             <div class="ex" >
