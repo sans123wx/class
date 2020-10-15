@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin垂直重叠</title>
+    <style>
+        .ex {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        .level .container {
+            display: flex;
+        }
+        .inset {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .inset .item:nth-child(4),.inset .item:last-child {
+            visibility: hidden;
+        }
+        .show:checked + div.item {
+            visibility: visible;
+        }
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="level">
+        <h1>水平方向</h1>
+        <div class="container">
+            <div class="ex" style="margin-right: 10px;"></div>
+            <div class="ex" style="margin-left: 15px"></div>
+        </div>
+    </div>
+    <h1>垂直方向</h1>
+    <div class="vertical">
+        
+        <div class="container">
+            <div class="ex" style="margin-bottom: 10px;"></div>
+            <div class="ex" style="margin-top: 15px"></div>
+        </div>
+    </div>
+    <h1>元素内</h1>
+    <div class="inset">
+        <div class="item">
+            <div class="ex" >
+                <p>
+                    内外边距均为0
+                </p>
+            </div>
+            
+            <div class="ex" style="border-width: 0;background-color: green;">
+                <div style="background-color: red;margin-top:10px;height: 50px;">
+
+                </div>
+                <p>
+                    内外边距均为0
+                </p>
+            </div>
+            
+        </div>
+        <label for="b">
+            设置边框
+        </label>
+        <input type="checkbox" id="b" hidden class="show">
+        <div class="item">
+            <div class="ex" >
+                <p>
+                    内外边距均为0
+                </p>
+            </div>
+            
+            <div class="ex" style="border-width: 1;background-color: green;">
+                <div style="background-color: red;margin-top:10px;height: 50px;">
+
+                </div>
+                <p>
+                    内外边距均为0
+                </p>
+                <p>
+                    设置了边框
+                </p>
+            </div>
+            
+        </div>
+        <label for="v">
+            设置溢出隐藏
+        </label>
+        <input type="checkbox" id="v" hidden class="show">
+        <div class="item">
+            <div class="ex" >
+                <p>
+                    内外边距均为0
+                </p>
+            </div>
+            
+            <div class="ex" style="border-width: 0;background-color: green;overflow: hidden;">
+                <div style="background-color: red;margin-top:10px;height: 50px;">
+
+                </div>
+                <p>
+                    内外边距均为0
+                </p>
+                <p>
+                    overflow:hidden
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

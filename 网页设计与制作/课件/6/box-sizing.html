@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        body > div > div{
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        div[class^="ex"] {
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+        }
+        div[class^="ex1"] {
+            box-sizing: border-box;
+        }
+        div[class$="-2"] {
+            visibility: hidden;
+        }
+        label {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            position: relative;
+            top: -30px;
+        }
+        label:hover {
+            cursor: pointer;
+        }
+        label img {
+            width: 100%;
+        }
+        .show:checked + div{
+            visibility: visible;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="bb">
+        <h2>box-sizing:border-box</h2>
+        <div>
+            <div class="ex1-1">
+                <p>元素宽度：200px</p>
+                <p>边框宽度：10px</p>
+            </div>
+            <label for="t1">
+                <img src="./direction-right.png" alt="">
+            </label>
+            <input type="checkbox" id="t1" class="show" hidden>
+            <div class="ex1-2" style="border-width: 20px;">
+                <p>元素宽度：200px</p>
+                <p>边框宽度：20px</p>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <div class="cb">
+        <h2>box-sizing:content-box（默认）</h2>
+        <div>
+            <div class="ex2-1">
+                <p>元素宽度：200px</p>
+                <p>边框宽度：10px</p>
+            </div>
+            <label for="t2">
+                <img src="./direction-right.png" alt="">
+            </label>
+            <input type="checkbox" id="t2" class="show" hidden>
+            <div class="ex2-2" style="border-width: 20px;">
+                <p>元素宽度：200px</p>
+                <p>边框宽度：20px</p>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
