@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.bg-pic {
+            width: 600px;
+            height: 400px;
+            background-image: url(./155561383_2_20190304084212894.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: blue;
+        }
+        div.pic {
+            display: none;
+        }
+        #show:checked + div {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pic">
+        <h1>《饮酒·其五》</h1>
+        <p>结庐在人境，而无车马喧。</p>
+        <p>问君何能尔？心远地自偏。</p>
+        <p>采菊东篱下，悠然见南山。</p>
+        <p>山气日夕佳，飞鸟相与还。</p>
+        <p>此中有真意，欲辨已忘言。</p>
+    </div>
+    <label for="show">显示</label>
+    <input type="checkbox" name="show" id="show" hidden>
+    <div class="pic">
+        <h1>《饮酒·其五》</h1>
+        <p>结庐在人境，而无车马喧。</p>
+        <p>问君何能尔？心远地自偏。</p>
+        <p>采菊东篱下，悠然见南山。</p>
+        <p>山气日夕佳，飞鸟相与还。</p>
+        <p>此中有真意，欲辨已忘言。</p>
+        <img src="./155561383_2_20190304084212894.jpg" alt="">
+    </div>
+</body>
+</html>
