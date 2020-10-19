@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+    <style>
+        body > div {
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+        div.inline {
+            padding: 10px;
+        }
+        div.inline > * {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        display:block块级元素会占满一行。<br>
+        <h1>h1~h6元素</h1>
+        <div>div元素</div>
+        <p>p元素</p>
+    </div>
+    <div class="inline">
+        display:inline行内元素或内联元素，会和其他行内元素或文字在一行内显示，并且不能设置高度与宽度，内外边距。<br>
+        <a href="">a元素</a>
+        <span>span元素</span>
+    </div>
+    <div class="inline-block">
+        display:inline-block行内元素或内联元素，会和其他行内元素或文字在一行内显示，能设置高度与宽度，内外边距。
+    </div>
+    <div class="none">
+        display:none隐藏元素，且不占空间。
+    </div>
+</body>
+</html>
