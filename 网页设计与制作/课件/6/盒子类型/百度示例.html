@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度示例</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .clear::after {
+            content:"";
+            clear: both;
+            display: block;
+        }
+        /* 导航 */
+        .nav {
+            font-size: 0;
+        }
+        /* 导航元素 */
+        .item {
+            font: 13px/23px Arial,sans-serif;
+            text-decoration: none;
+            display: inline-block;
+            color: #222;
+            height: 23px;
+            margin-top: 19px;
+        }
+        /* 左边栏 */
+        .nav-left {
+            padding-left: 24px;
+            float: left;
+        }
+        .nav-left .item {            
+            margin-right: 31px;
+                
+        }
+        .nav-left .item:hover {
+            color: #315efb;
+        }
+        /* 右边栏 */
+        .nav-right {
+            float: right;
+            padding-right: 24px;
+        }
+        .nav-right .item {
+            margin-left: 32px;
+            vertical-align: middle;
+        }
+        .nav-right .item:last-child {
+            margin-top: 18px;
+            background-color: #4e71f2;
+            height: 24px;
+            width: 48px;
+            line-height: 24px;
+            text-align: center;
+            font-weight: 400;
+            border-radius: 6px;
+            color: #fff;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav clear">
+        <div class="nav-left">
+            <a href="" class="item">新闻</a>
+            <a href="" class="item">hao123</a>
+            <a href="" class="item">地图</a>
+            <a href="" class="item">视频</a>
+            <a href="" class="item">贴吧</a>
+            <a href="" class="item">学术</a>
+            <a href="" class="item">更多</a>
+        </div>
+        <div class="nav-right">
+            <a href="" class="item">设置</a>
+            <a href="" class="item">登录</a>
+        </div>     
+    </div>
+    
+</body>
+</html>
