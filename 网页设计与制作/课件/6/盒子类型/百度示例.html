@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>百度示例</title>
     <style>
-        body {
+        body,html {
             margin: 0px;
         }
         .clear::after {
@@ -17,6 +17,7 @@
             font-size: 0;
             min-width: 1200px;
             width: 100%;
+            height: 60px;
         }
         /* 导航元素 */
         .item {
@@ -60,6 +61,25 @@
             color: #fff;
             
         }
+        /* 搜索部分 */
+        .search {
+            width: 654px;
+            margin: 0 auto;
+        }
+        /* logo部分 */
+        .logo {
+            height: 165px;
+            position: relative;
+            text-align: center;
+
+        }
+        .logo img {
+            width: 270px;
+            height: 129px;
+            position: absolute;
+            bottom: 15px;
+            margin-left: -135px;
+        }
     </style>
 </head>
 <body>
@@ -77,6 +97,11 @@
             <a href="" class="item">设置</a>
             <a href="" class="item">登录</a>
         </div>     
+    </div>
+    <div class="search">
+        <div class="logo">
+            <img src="./logo.png" alt="图片">
+        </div>
     </div>
     
 </body>
