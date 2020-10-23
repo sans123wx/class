@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow演示</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .item {
+            border: 1px solid black;
+            width: 200px;
+            height: 300px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 1px solid black;
+            font-size: 16px;
+            font-weight: 800;
+            height: 40px;
+            line-height: 40px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="header">
+                overflow:visible（默认）
+            </div>
+            <div class="contetn">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut debitis! Quidem enim dicta quae, odio voluptatum, maxime incidunt, voluptates odit eius nisi recusandae dignissimos excepturi facere omnis dolores ipsam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut debitis! Quidem enim dicta quae, odio voluptatum, maxime incidunt, voluptates odit eius nisi recusandae dignissimos excepturi facere omnis dolores ipsam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut debitis! Quidem enim dicta quae, odio voluptatum, maxime incidunt, voluptates odit eius nisi recusandae dignissimos excepturi facere omnis dolores ipsam.
+                </p>
+            </div>
+        </div>
+        <div class="item" style="overflow: hidden;">
+            <div class="header">
+                overflow:hidden
+            </div>
+            <div class="contetn">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut debitis! Quidem enim dicta quae, odio voluptatum, maxime incidunt, voluptates odit eius nisi recusandae dignissimos excepturi facere omnis dolores ipsam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut debitis! Quidem enim dicta quae, odio voluptatum, maxime incidunt, voluptates odit eius nisi recusandae dignissimos excepturi facere omnis dolores ipsam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut debitis! Quidem enim dicta quae, odio voluptatum, maxime incidunt, voluptates odit eius nisi recusandae dignissimos excepturi facere omnis dolores ipsam.
+                </p>
+            </div>
+        </div>
+        <div class="item" >
+            <div class="header">
+                overflow:scroll
+            </div>
+            <div class="contetn" style="overflow: scroll;height: 260px;">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut debitis! Quidem enim dicta quae, odio voluptatum, maxime incidunt, voluptates odit eius nisi recusandae dignissimos excepturi facere omnis dolores ipsam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut debitis! Quidem enim dicta quae, odio voluptatum, maxime incidunt, voluptates odit eius nisi recusandae dignissimos excepturi facere omnis dolores ipsam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut debitis! Quidem enim dicta quae, odio voluptatum, maxime incidunt, voluptates odit eius nisi recusandae dignissimos excepturi facere omnis dolores ipsam.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

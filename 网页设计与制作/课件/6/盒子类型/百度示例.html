@@ -6,6 +6,7 @@
     <style>
         body,html {
             margin: 0px;
+            height: 100%;
         }
         .clear::after {
             content:"";
@@ -61,14 +62,17 @@
             color: #fff;
             
         }
-        /* 搜索部分 */
+        /* 搜索区 */
         .search {
             width: 654px;
             margin: 0 auto;
+            height: calc(40% - 60px);
+            min-height: 254px;
+            max-height: 450px;
         }
         /* logo部分 */
         .logo {
-            height: 165px;
+            height: calc(60% - 24px);
             position: relative;
             text-align: center;
 
@@ -79,6 +83,62 @@
             position: absolute;
             bottom: 15px;
             margin-left: -135px;
+        }
+        /* 搜索部分 */
+        .s-form {
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            position: relative;
+        }
+        /* 输入框 */
+        .s-form .kw {
+            width: 480px;
+            height: 16px;
+            padding: 12px 48px 12px 16px;
+            font-size: 16px;
+            margin: 0;
+            vertical-align: top;
+            border-radius: 10px 0 0 10px;
+            border: 2px solid #c4c7ce;
+            color: #222;
+            overflow: hidden;
+
+        }
+        .s-form .kw:focus {
+            border-radius: 10px 0 0 10px;
+            border: 2px solid #4e6ef2;
+            opacity: 1;
+            outline: 0;
+        }
+        /* 按钮 */
+        .s-form .btn {
+            cursor: pointer;
+            width: 108px;
+            height: 44px;
+            line-height: 45px;
+            padding: 0;
+            background-color: #4e6ef2;
+            border-radius: 0 10px 10px 0;
+            font-size: 17px;
+            color: #fff;
+            box-shadow: none;
+            font-weight: 400;
+            border: none;
+            position: absolute;
+            right: 0;
+        }
+        /* 图标 */
+        .s-form span {
+            display: inline-block;
+            width: 24px;
+            height: 20px;
+            background-image: url(./soutu.png);
+            position: absolute;
+            top: 50%;
+            right: 124px;
+            background-position: 0 -51px;
+            margin-top: -9px;
         }
     </style>
 </head>
@@ -102,6 +162,11 @@
         <div class="logo">
             <img src="./logo.png" alt="图片">
         </div>
+        <form action="" class="s-form">
+            <span></span>
+            <input type="text" class="kw">
+            <input type="submit" class="btn" value="百度一下">
+        </form>
     </div>
     
 </body>
