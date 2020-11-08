@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>T型布局</title>
+    <style>
+        .main {
+            min-width: 600px;
+        }
+        .main > div {
+            float: left;
+        }
+        .left {
+            width: 200px;
+            background-color: red;
+            margin-left: -100%;
+        }
+        .right {
+            width: 200px;
+            background-color: blue;
+            margin-left: -200px;
+        }
+        .middle {
+            width: 100%;
+            background-color: yellow;
+        }
+        .middle > .content {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .s-main {
+            padding: 0 200px;
+        }
+        .s-main > div {
+            float: left;
+        }
+        .s-middle {
+            width: 100%;
+            background-color: yellow;
+        }
+        .s-left {
+            width: 200px;
+            background-color: red;
+            margin-left: -100%;
+            position: relative;
+            left: -200px;
+        }
+        .s-right {
+            width: 200px;
+            background-color: blue;
+            margin-left: -200px;
+            position: relative;
+            left: 200px;
+        }
+        .d {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+       <div class="middle">
+           <div class="content">
+               中间
+           </div>
+       </div>
+       <div class="left">
+           左边
+       </div>
+       <div class="right">
+           右边
+       </div>
+   </div>
+<div class="d"></div>
+   <div class="s-main">
+    <div class="s-middle">
+            中间
+    </div>
+    <div class="s-left">
+        左边
+    </div>
+    <div class="s-right">
+        右边
+    </div>
+</div>
+</body>
+</html>
