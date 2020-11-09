@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position定位</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .img{
+            position: relative;
+            height: 300px;
+            border: 1px solid black;
+        }
+        img {
+            border: 1px solid black;
+            width: 200px;
+            position: absolute;
+        }
+        #cat {
+            top: 15px;
+            left: 150px;
+            z-index: 2;
+            
+        }
+        #dog {
+            top: 25px;
+            left: 120px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sit voluptatum cum impedit asperiores porro eum tempore dolor! Blanditiis iste consectetur velit beatae laboriosam aliquid cum quos, ipsum autem recusandae.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sit voluptatum cum impedit asperiores porro eum tempore dolor! Blanditiis iste consectetur velit beatae laboriosam aliquid cum quos, ipsum autem recusandae.
+    </p>
+    <div class="img">
+        <img src="./猫.jpeg" alt="" id="cat">
+        <img src="./狗.jpg" alt="" id="dog">
+    </div> 
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sit voluptatum cum impedit asperiores porro eum tempore dolor! Blanditiis iste consectetur velit beatae laboriosam aliquid cum quos, ipsum autem recusandae.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sit voluptatum cum impedit asperiores porro eum tempore dolor! Blanditiis iste consectetur velit beatae laboriosam aliquid cum quos, ipsum autem recusandae.
+    </p>
+    <div>
+        <button>static</button>
+        <button>relative</button>
+        <button>absolute</button>
+        <button>fixed</button>
+    </div>
+    <script>
+        var buttons = document.getElementsByTagName('button')
+        for(i = 0; i <buttons.length;i++){
+            buttons[i].onclick = function(e){
+                document.getElementById('cat').style.position = e.target.innerHTML;
+            }
+        }
+    </script>
+</body>
+</html>
