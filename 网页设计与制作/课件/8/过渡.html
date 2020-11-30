@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过度示例</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            min-width: 964px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .item .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        ol {
+            font-size: 18px;
+        }
+        ol li:last-child div {
+            text-align: center;
+        }
+        .ex {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+        .ex:hover {
+            color: red;
+            background-color: green;
+        }
+        .delay:hover {
+            transition-delay:5s;
+            -webkit-transition-delay:5s
+        }
+        .duration:hover {
+            transition-duration:5s;
+            -webkit-transition-duration:5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>过度</h1>
+        <div class="item">
+            <div class="title">一、transition-delay</div>
+            <ol class="content">
+                <li>作用：设置延迟时间</li>
+                <li>值：<时间></li>
+                <li>
+                    示例代码：
+                    <code>
+                        <pre>
+        .delay:hover {
+            color:red;
+            background-color:green;
+            transition-delay:100ms;
+            -webkit-transition-delay:100ms
+        }
+                        </pre>     
+                    </code>
+
+                </li>
+                <li>
+                    <p>示例：</p>
+                    <div>
+                        <span class="delay ex">
+                            鼠标放上去以后，延迟为5秒
+                        </span>
+                    </div>   
+                </li>
+            </ol>
+        </div>
+        <div class="item">
+            <div class="title">二、transition-duration</div>
+            <ol class="content">
+                <li>作用：过渡时间</li>
+                <li>值：<时间></li>
+                <li>
+                    示例代码：
+                    <code>
+                        <pre>
+        .duration:hover {
+            color:red;
+            background-color:green;
+            transition-duration:100ms;
+            -webkit-transition-duration:100ms
+        }
+                        </pre>     
+                    </code>
+                </li>
+                <li>
+                    <p>示例：</p>
+                    <div>
+                        <span class="duration ex">
+                            鼠标放上去以后，过渡时间设置为2秒
+                        </span>
+                    </div>  
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画示例</title>
+    <style>
+        #animation:hover {
+            
+            -webkit-animation-delay: 100ms;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-duration: 500ms;
+            -webkit-animation-iteration-count: 2;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-name: "test" , "test1";
+        }
+        @-webkit-keyframes test {
+            to {
+                font-size:x-large;
+                border: medium solid white;
+                background-color: green;
+                
+            }
+        }
+        @-webkit-keyframes test1 {
+            to {
+                
+                color: white;
+                padding: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat iure, sequi earum, iusto blanditiis possimus dolore ipsa dignissimos placeat eligendi qui recusandae assumenda omnis deleniti veritatis ducimus unde sit.
+        <span id="animation">动画演示</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt praesentium iusto ipsa incidunt error, maiores quaerat quam aut exercitationem, illum reprehenderit cum nulla quidem ipsum porro! Fuga, deleniti nostrum!
+    </p>
+</body>
+</html>
