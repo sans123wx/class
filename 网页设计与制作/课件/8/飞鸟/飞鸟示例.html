@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .brid {
+            width: 88px;
+            height: 125px;
+            opacity: 0.8;
+            background-image: url(./bird-cells-new.svg);
+            background-size: auto 100%;
+            -webkit-transform: scale(0.6);
+            -webkit-animation-duration: 0.8s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: steps(10);
+            -webkit-animation-name: "test";
+        }
+        .brid-container {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            background-image: url(./16.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+        .b-item {
+            position: absolute;
+            top: 50px;
+            width: 88px;
+            height: 125px;  
+            -webkit-transform: translateX(-10vw);          
+            -webkit-animation-duration: 10s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-name: "test1";
+        }
+        @-webkit-keyframes test {
+            to {
+                background-position: -900px 0;
+            }
+        }
+        @-webkit-keyframes test1{
+            0%{
+                -webkit-transform:  translateX(-10vw);
+            }
+            15% {
+                -webkit-transform: translateY(2vh) translateX(10vw);
+            }
+            30% {
+                -webkit-transform: translateY(0vh) translateX(30vw);
+            }
+            45% {
+                -webkit-transform: translateY(2vh) translateX(50vw);
+            }
+            60% {
+                -webkit-transform: translateY(4vh) translateX(70vw);
+            }
+            75%{
+                -webkit-transform: translateY(2vh) translateX(90vw);
+            }
+            90%{
+                -webkit-transform: translateY(3vh) translateX(110vw);
+            }
+            100%{
+                -webkit-transform: translateY(2vh) translateX(125vw);
+            }
+            
+        }
+        .b2 {
+            -webkit-animation-delay: 1.5s;
+        }
+        .b3 {
+            -webkit-animation-delay: 5s;
+        }
+        .b4 {
+            -webkit-animation-delay: 8s;
+        }
+    </style>
+</head>
+<body>
+    <div class="brid-container">
+        <div class="b1 b-item">
+            <div class="brid"></div>
+        </div>
+        <div class="b2 b-item">
+            <div class="brid"></div>
+        </div>
+        <div class="b3 b-item">
+            <div class="brid"></div>
+        </div>
+        <div class="b4 b-item">
+            <div class="brid"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
