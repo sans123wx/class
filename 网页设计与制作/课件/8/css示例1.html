@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百叶窗</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #333333;
+        }
+        ul {
+            list-style-type: none;
+            width: 800px;
+            margin:150px auto;
+        }
+        li {
+            border-left: 1px solid #fff;
+            float: left;
+            width: 156px;
+            transition: all 1s;
+            overflow: hidden;
+            position: relative;
+        }
+        .flag {
+            position: absolute;
+            left:0;
+            bottom:0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color:rgba(255,255,255,0.7);
+            background: rgba(0,0,0,0.5);
+        }
+        img {
+            height: 100%;
+        }
+        .main:hover li {
+            width: 70px;
+        }
+        .main li:hover {
+            width:500px
+        }
+    </style>
+</head>
+<body>
+    <ul class="main">
+        <li class="part"><img src="./图片/1.jpg" alt="">
+            <div class="flag">薇恩</div>
+        </li>
+        <li class="part"><img src="./图片/2.jpg" alt="">
+            <div class="flag">阿卡丽</div>
+        </li>
+        <li class="part"><img src="./图片/3.jpg" alt="">
+            <div class="flag">慎与劫</div>
+        </li>
+        <li class="part"><img src="./图片/4.jpg" alt="">
+            <div class="flag">凛冬之怒</div>
+        </li>
+        <li class="part"><img src="./图片/5.jpg" alt="">
+            <div class="flag">亚索</div>
+        </li>
+    </ul>
+</body>
+</html>

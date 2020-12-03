@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡牌翻转</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        .card {
+            position: relative;
+        }
+        .p1 {
+            z-index: 2;
+            background-color: black;
+            overflow: hidden;
+            -webkit-transition-duration: 1s;
+
+        }
+        .p2 {
+            overflow: hidden;
+            background-color: white;
+            -webkit-transform: rotateY(-180deg);
+            z-index: 1;
+            -webkit-transition-duration: 1s;
+
+        }
+        .p1 , .p2 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .card:hover .p1 {
+            z-index: 2;
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+
+        }
+        .card:hover .p2 {
+            z-index: 3;
+            -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+
+        }
+        .card:hover > * {
+            -webkit-transition-duration: 1s;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="p1">
+            <img src="./图片/1.jpg" alt="">
+        </div>
+        <div class="p2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, natus consectetur! Consectetur libero fugit illum voluptatem, culpa aliquam labore consequatur veritatis rerum? Consectetur obcaecati autem consequatur sit minima dignissimos nostrum.
+        </div>
+    </div>
+</body>
+</html>
