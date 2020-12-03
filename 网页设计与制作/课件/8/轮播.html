@@ -10,66 +10,81 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        img {
+            display: block;
+
         }
         .container {
             width: 500px;
             height: 313px;
             overflow: hidden;
             position: relative;
+            text-align: center;
+            position: relative;
+            
         }
         input {
-            float: left;
+            display: none
         }
 
         div.item {
             position: absolute;
-            opacity: 0;
+            transform: translateX(500px);
+        }
+        div.button {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+        label {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid white;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: #666;
+            margin: 0 5px;
+        }
+        input[type=radio]:checked + div{
+            transform: translateX(0);
+            -webkit-transition: all 0.5s linear;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <input type="radio">
+        <input type="radio" name="pic" id="i1" checked>
         <div class="item">
             <img src="./图片/1.jpg" alt="">
-            <div class="info">
-                xxxx
-            </div>
         </div>
-        <input type="radio">
+        <input type="radio" name="pic" id="i2">
         <div class="item">
-            <img src="./图片/1.jpg" alt="">
-            <div class="info">
-                xxxx
-            </div>
+            <img src="./图片/2.jpg" alt="">
+
         </div>
-        <input type="radio">
+        <input type="radio" name="pic" id="i3">
         <div class="item">
-            <img src="./图片/1.jpg" alt="">
-            <div class="info">
-                xxxx
-            </div>
+            <img src="./图片/3.jpg" alt="">
+
         </div>
-        <input type="radio">
+        <input type="radio" name="pic" id="i4">
         <div class="item">
-            <img src="./图片/1.jpg" alt="">
-            <div class="info">
-                xxxx
-            </div>
+            <img src="./图片/4.jpg" alt="">
+
         </div>
-        <input type="radio">
+        <input type="radio" name="pic" id="i5">
         <div class="item">
-            <img src="./图片/1.jpg" alt="">
-            <div class="info">
-                xxxx
-            </div>
+            <img src="./图片/5.jpg" alt="">
         </div>
-        <input type="radio">
-        <div class="item">
-            <img src="./图片/1.jpg" alt="">
-            <div class="info">
-                xxxx
-            </div>
+        <div class="button">
+            <label for="i1"></label>
+            <label for="i2"></label>
+            <label for="i3"></label>
+            <label for="i4"></label>
+            <label for="i5"></label>
         </div>
     </div>
 </body>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #333;
+        }
+        img {
+            display: block;
+        }
+        ul {
+            /* list-style: none; */
+            list-style-type: none;
+            width: 800px;
+            margin: 150px auto;
+            padding: 0;
+        }
+        li {
+            width: 140px;
+            overflow: hidden;
+            float: left;
+            /* display: inline-block; */
+            border-left: 1px solid white;
+            transition: all 1s;
+            padding: 0;
+            margin: 0;
+            position: relative;
+
+        }
+        
+        ul:hover li {
+            width: 50px;
+            transition: all 1s;
+        }
+        .container ul li:hover {
+            width: 500px;
+            transition: all 1s;
+        }
+        .info {
+            position: absolute;
+            left:0;
+            bottom:0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color:rgba(255,255,255,0.7);
+            background: rgba(0,0,0,0.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>
+                <img src="./图片/1.jpg" alt="">
+                <div class="info">
+                    薇恩
+                </div>
+            </li>
+            <li>
+                <img src="./图片/2.jpg" alt="">
+                <div class="info">
+                    阿卡丽
+                </div>
+            </li>
+            <li>
+                <img src="./图片/3.jpg" alt="">
+                <div class="info">
+                    慎与劫
+                </div>
+            </li>
+            <li>
+                <img src="./图片/4.jpg" alt="">
+                <div class="info">
+                    凛冬之怒
+                </div>
+            </li>
+            <li>
+                <img src="./图片/5.jpg" alt="">
+                <div class="info">
+                    亚索
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
