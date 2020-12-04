@@ -1,0 +1,30 @@
+#tj {
+    display: inline-block;
+    width: 50%;
+    background-color: #666;
+    height: 100%;
+    overflow: hidden;
+    vertical-align: top;
+}
+#tj .img {
+    text-align: center;
+    margin: 270px 0;
+
+}
+#tj .img img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+#tj img:hover {
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: "tj";
+}
+
+@-webkit-keyframes tj {
+    to {
+        transform: rotate(360deg);
+    }
+}
