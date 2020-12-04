@@ -3,13 +3,13 @@
     height: 100vh;
     overflow: hidden;
 }
-ul {
+#byc ul {
     list-style: none;
     width: 800px;
     padding: 0;
     margin: 200px auto;
 }
-li {
+#byc li {
     position: relative;
     border-left: 1px solid white;
     float: left;
@@ -17,15 +17,15 @@ li {
     overflow: hidden;
     transition: all 0.8s;
 }
-#byc ul li:hover {
+#byc ul.qwe li:hover {
     width: 500px;
     transition: all 0.8s;
 }
-ul:hover li {
+#byc ul:hover li {
     width: 50px;
     transition: all 0.8s;
 }
-div.info {
+#byc div.info {
             position: absolute;
             left:0;
             bottom:0;
